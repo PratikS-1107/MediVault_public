@@ -33,18 +33,12 @@ A modern, role-based, serverless web application designed to digitize healthcare
 
 ## 🏗️ Architecture & Security
 
-```mermaid
-flowchart TD
-    subgraph Client["Frontend"]
-        jsPDF["jsPDF Engine"]
-        Gemini["Google Gemini API"]
-        SupabaseClient["Supabase Client"]
-    end
++-------------------------------------------------------+FRONTEND (Vanilla JS)• Client-Side PDF Generation (jsPDF)• AI Diagnostics Integration (Google Gemini API)• REST API & Auth Gateway (Supabase Client)+-------------------------------------------------------+                       |
+                       |  HTTPS / REST / Auth
+                       v
++-------------------------------------------------------+SUPABASE BACKEND (PostgreSQL)• Authentication & JWT Management• Row-Level Security (RLS) Access Policies+-------------------------------------------------------+Complete Section Copy-PasteHere is how the entire section looks with your explanatory text included below it:Markdown## 🏗️ Architecture & Security
 
-    subgraph Server["Supabase Backend"]
-        Auth["Authentication"]
-        RLS["PostgreSQL RLS Policies"]
-    end
-
-    SupabaseClient --> Auth
-    SupabaseClient --> RLS
++-------------------------------------------------------+FRONTEND (Vanilla JS)• Client-Side PDF Generation (jsPDF)• AI Diagnostics Integration (Google Gemini API)• REST API & Auth Gateway (Supabase Client)+-------------------------------------------------------+                       |
+                       |  HTTPS / REST / Auth
+                       v
++-------------------------------------------------------+SUPABASE BACKEND (PostgreSQL)• Authentication & JWT Management• Row-Level Security (RLS) Access Policies+-------------------------------------------------------+
