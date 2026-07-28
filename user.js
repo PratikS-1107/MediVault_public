@@ -4,7 +4,7 @@ let currentProfile = null;
 let patientRecordsCache = [];
 let assistantChatHistory = [];
 
-const GEMINI_API_KEY = "AIzaSyA2nqjy0nD1fwG_EfYsIRjqxEvExcSSLNU"; // Replace with your real key
+const GEMINI_API_KEY = "Your Gemini API Key"; // Replace with your real key
 
 // Date formatting function
 function formatDateDDMMYYYY(dateObj) {
