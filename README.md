@@ -33,12 +33,22 @@ A modern, role-based, serverless web application designed to digitize healthcare
 
 ## 🏗️ Architecture & Security
 
-+-------------------------------------------------------+FRONTEND (Vanilla JS)• Client-Side PDF Generation (jsPDF)• AI Diagnostics Integration (Google Gemini API)• REST API & Auth Gateway (Supabase Client)+-------------------------------------------------------+                       |
-                       |  HTTPS / REST / Auth
-                       v
-+-------------------------------------------------------+SUPABASE BACKEND (PostgreSQL)• Authentication & JWT Management• Row-Level Security (RLS) Access Policies+-------------------------------------------------------+Complete Section Copy-PasteHere is how the entire section looks with your explanatory text included below it:Markdown## 🏗️ Architecture & Security
+## 🏗️ Architecture & Security
 
-+-------------------------------------------------------+FRONTEND (Vanilla JS)• Client-Side PDF Generation (jsPDF)• AI Diagnostics Integration (Google Gemini API)• REST API & Auth Gateway (Supabase Client)+-------------------------------------------------------+                       |
-                       |  HTTPS / REST / Auth
-                       v
-+-------------------------------------------------------+SUPABASE BACKEND (PostgreSQL)• Authentication & JWT Management• Row-Level Security (RLS) Access Policies+-------------------------------------------------------+
+```text
++-------------------------------------------------------+
+|                 FRONTEND (Vanilla JS)                 |
+|-------------------------------------------------------|
+|  • Client-Side PDF Generation (jsPDF)                 |
+|  • AI Diagnostics Integration (Google Gemini API)     |
+|  • REST API & Auth Gateway (Supabase Client)          |
++-------------------------------------------------------+
+                           |
+                           |  HTTPS / REST / Auth
+                           v
++-------------------------------------------------------+
+|             SUPABASE BACKEND (PostgreSQL)             |
+|-------------------------------------------------------|
+|  • Authentication & JWT Management                    |
+|  • Row-Level Security (RLS) Access Policies           |
++-------------------------------------------------------+
