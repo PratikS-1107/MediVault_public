@@ -50,3 +50,11 @@ A modern, role-based, serverless web application designed to digitize healthcare
 |  • Authentication & JWT Management                    |
 |  • Row-Level Security (RLS) Access Policies           |
 +-------------------------------------------------------+
+
+
+
+```markdown
+MediVault relies on **PostgreSQL Row-Level Security (RLS)** to protect sensitive medical data:
+- **Patients** can only read and write their own records and appointment data.
+- **Doctors** can view assigned patient histories and append prescription entries.
+- **Receptionists** can manage global queue schedules without accessing private consultation notes.
