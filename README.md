@@ -32,15 +32,21 @@ A modern, role-based, serverless web application designed to digitize healthcare
 ---
 
 ## 🏗️ Architecture & Security
-[ Frontend (Vanilla JS / HTML / CSS) ]
-├── Client-Side PDF Generation (jsPDF)
-├── AI Diagnostics Integration (Google Gemini API)
-└── REST API & Auth Gateway (Supabase Client)
-│
-▼
-[ Supabase Backend (PostgreSQL) ]
-├── Authentication & JWT Management
-└── Row-Level Security (RLS) Policies (Enforced Access Control)
+```mermaid
+graph TD
+    subgraph Frontend["Frontend (Vanilla JS / HTML / CSS)"]
+        PDF["Client-Side PDF Generation (jsPDF)"]
+        AI["AI Diagnostics Integration (Google Gemini API)"]
+        API["REST API & Auth Gateway (Supabase Client)"]
+    end
+
+    subgraph Backend["Supabase Backend (PostgreSQL)"]
+        Auth["Authentication & JWT Management"]
+        RLS["Row-Level Security (RLS) Policies"]
+    end
+
+    API -->|HTTPS / REST| Auth
+    API -->|Encrypted Queries| RLS
 
 MediVault relies on **PostgreSQL Row-Level Security (RLS)** to protect sensitive medical data:
 - **Patients** can only read and write their own records and appointment data.
