@@ -1,7 +1,7 @@
 // 1. Configuration - Replace these with your actual Supabase Project details
 // You can find these in Supabase -> Settings -> API
-const SUPABASE_URL = "https://jvhzvsnnfyqplyussuju.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_LhWzeo3ULeBZLhIv2ShAPg_8GeJ5wU0";
+const SUPABASE_URL = "Your supabase url";
+const SUPABASE_ANON_KEY = "Your Supabase Anon Key";
 
 // 2. Initialize the Supabase Client
 // Note: This assumes you have included the Supabase CDN in your HTML files
