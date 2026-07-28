@@ -33,8 +33,6 @@ A modern, role-based, serverless web application designed to digitize healthcare
 
 ## 🏗️ Architecture & Security
 
-## 🏗️ Architecture & Security
-
 ```text
 +-------------------------------------------------------+
 |                 FRONTEND (Vanilla JS)                 |
