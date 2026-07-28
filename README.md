@@ -32,6 +32,7 @@ A modern, role-based, serverless web application designed to digitize healthcare
 ---
 
 ## 🏗️ Architecture & Security
+
 ```mermaid
 graph TD
     subgraph Frontend["Frontend (Vanilla JS / HTML / CSS)"]
@@ -47,6 +48,7 @@ graph TD
 
     API -->|HTTPS / REST| Auth
     API -->|Encrypted Queries| RLS
+
 
 MediVault relies on **PostgreSQL Row-Level Security (RLS)** to protect sensitive medical data:
 - **Patients** can only read and write their own records and appointment data.
